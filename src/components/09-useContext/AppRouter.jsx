@@ -13,13 +13,16 @@ const AppRouter = () => {
 
         <Navbar />
 
-        <Switch>
-          <Route exact path="/" component={ HomeScreen } />
-          <Route path="/about" component={ AboutScreen } />
-          <Route path="/login" component={ LoginScreen } />
-          <Route path="/404" component={HomeScreen} />
-          <Redirect to="/404" />
-        </Switch>
+        <div className="container">
+          <Switch>
+            <Route exact path="/" component={ HomeScreen } />
+            <Route path="/about" component={ AboutScreen } />
+            <Route path="/login" component={ LoginScreen } />
+            <Route path="/404" component={HomeScreen} />
+            <Redirect to="/404" />
+          </Switch>
+        </div>
+        
     </Router>
   )
 }
