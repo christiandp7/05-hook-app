@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puebas en <TodoAdd /> should render correctly 1`] = `
+<div>
+  <h1>
+    TodoApp Reducer (
+    0
+    /
+    0
+    )
+  </h1>
+  <hr />
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-7"
+      >
+        Todos
+      </div>
+      <div
+        className="col-5"
+      >
+        Agregar
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-7"
+      >
+        <TodoList
+          handleDelete={[Function]}
+          handleToggle={[Function]}
+          todos={Array []}
+        />
+      </div>
+      <div
+        className="col-5"
+      >
+        <TodoAdd
+          handleAddTodo={[Function]}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
