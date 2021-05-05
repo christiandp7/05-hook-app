@@ -8,12 +8,11 @@ jest.mock('../../../hooks/useFetch')
 jest.mock('../../../hooks/useCounter')
 
 describe('Tests in <MultipleCustomHooks />', () => {
-	useCounter.mockReturnValue({
-		counter: 1,
-		increment: () => {},
-	})
-
 	test('should render', () => {
+		useCounter.mockReturnValue({
+			counter: 1,
+			increment: () => {},
+		})
 		useFetch.mockReturnValue({
 			data: null,
 			loading: true,
@@ -25,6 +24,10 @@ describe('Tests in <MultipleCustomHooks />', () => {
 	})
 
 	test('should show the info', () => {
+		useCounter.mockReturnValue({
+			counter: 1,
+			increment: () => {},
+		})
 		useFetch.mockReturnValue({
 			data: [
 				{
